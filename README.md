@@ -1,7 +1,7 @@
 ![Logo](https://moon.is-inside.me/oq3RqbXw.png)
 =========
 ### Description
---ProLoader-- FYTAGB is a free YouTube Converter without limits.
+FYTAGB is a free YouTube Converter without limits.
 
 ### Support
 <div align="left">
