@@ -12,6 +12,7 @@ FYTAGB is a free YouTube Converter without limits.
 
 ### Version
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/MauriceX24/ProLoader?style=for-the-badge)
+[Download Setup](https://drive.google.com/file/d/184OfFVPAAqBqvmfwW0ZXz6L85P3N7Wv7/view?usp=sharing)
 
 ### Screenshots
 ![Image](https://moon.is-inside.me/TKGuYeGX.png)
