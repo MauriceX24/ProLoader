@@ -1,8 +1,15 @@
-![Logo](https://moon.is-inside.me/oq3RqbXw.png)
+FYTAGB - Converter
 =========
 ### Description
 FYTAGB is a free YouTube Converter without limits.
 Download fast as possible with HQ.
+
+### Details
+> - Download with libvideo libary
+> - Convert with ffmpeg
+> - Play with 320kbps
+> - No maxiumum of Video-lenght
+> - As fast as your Internet allows
 
 ### Support
 <div align="left">
@@ -12,9 +19,16 @@ Download fast as possible with HQ.
 </div>
 
 ### Version
-### [Download Latest Version](https://github.com/MauriceX24/ProLoader/releases/tag/1.9 "Install ZIP")
+### [Download Latest Version](https://github.com/MauriceX24/ProLoader/releases/tag/2.1 "Install ZIP")
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/MauriceX24/ProLoader?style=for-the-badge)
-#### [Download Setup](https://drive.google.com/file/d/184OfFVPAAqBqvmfwW0ZXz6L85P3N7Wv7/view?usp=sharing)
+#### [Download Setup](https://drive.google.com/file/d/184OfFVPAAqBqvmfwW0ZXz6L85P3N7Wv7/view?usp=sharing) (Last updated years ago)
 
 ### Screenshots
-![Image](https://moon.is-inside.me/TKGuYeGX.png)
+![Image](https://cloud.lordmaurice.xyz/index.php/apps/files_sharing/publicpreview/4ofJA8DC8gAdqTt?x=1879&y=589&a=true&file=E8UaIToMkX.png&scalingup=0)
+
+### Important
+> Windows will block the software, because the file is not signed.
+> - You can click on "More Information" and then "Run anyway".
+> 
+> Also [here](https://www.virustotal.com/gui/file/b32fafdaad5e835cef33ff0a12eee4968c42913bd44788328cab0ef382988d96/detection) you 
+> can see a VirusTotal analyse.
