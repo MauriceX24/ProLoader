@@ -25,6 +25,10 @@ Download fast as possible with HQ.
 
 ### Screenshots
 ![Image](https://cloud.lordmaurice.xyz/index.php/apps/files_sharing/publicpreview/4ofJA8DC8gAdqTt?x=1879&y=589&a=true&file=E8UaIToMkX.png&scalingup=0)
+<img src="https://cloud.lordmaurice.xyz/index.php/apps/files_sharing/publicpreview/yTkMC3yS4oAFnQC?x=1879&y=589&a=true&file=explorer_t8aAKk3UNS.png&scalingup=0" alt="Result" width=300px height=400px />
+### Small GIF for a 4min Song
+<img src="https://cloud.lordmaurice.xyz/index.php/s/dqKziNRP9Q4jKog/download/FYTAGB_wuSo1S7S3D.gif" alt="Result" width=700px height=400px />
+
 
 ### Important
 > Windows will block the software, because the file is not signed.
