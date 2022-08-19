@@ -14,7 +14,7 @@ Download fast as possible with HQ.
 ### Support
 <div align="left">
     <a href="" title="Random-Nightclub" rel="nofollow">
-    <img src="https://discordapp.com/api/guilds/351756216579522560/widget.png?style=banner2" height="76px" alt="Random-Nightclub" data-canonical-src="https://discordapp.com/api/guilds/351756216579522560/widget.png?style=banner2" style="max-width:100%;">
+    <img src="https://discordapp.com/api/guilds/823218450913951776/widget.png?style=banner2" height="76px" alt="Random-Nightclub" data-canonical-src="https://discordapp.com/api/guilds/823218450913951776/widget.png?style=banner2" style="max-width:100%;">
     </a>
 </div>
 
