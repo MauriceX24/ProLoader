@@ -21,7 +21,7 @@ Download fast as possible with HQ.
 ### Version
 ### [Download Latest Version](https://github.com/MauriceX24/ProLoader/releases/tag/2.1 "Install ZIP")
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/MauriceX24/ProLoader?style=for-the-badge)
-#### [Download Setup](https://drive.google.com/file/d/184OfFVPAAqBqvmfwW0ZXz6L85P3N7Wv7/view?usp=sharing) (Last updated years ago)
+#### [Download Setup](https://drive.proton.me/urls/FKGNBDS9P0#qSgndFxJSRFE) (Last updated Sep. 2024)
 
 ### Screenshots
 ![Image](https://cloud.lordmaurice.xyz/index.php/apps/files_sharing/publicpreview/4ofJA8DC8gAdqTt?x=1879&y=589&a=true&file=E8UaIToMkX.png&scalingup=0)
