@@ -187,7 +187,7 @@
         </member>
         <member name="T:AngleSharp.Attributes.DomNoInterfaceObjectAttribute">
             <summary>
-            This attribute appears on interfaces, which must not be available 
+            This attribute appears on an interfaces, which must not be available 
             in the ECMAScript binding.
             </summary>
         </member>
@@ -3231,7 +3231,7 @@
         </member>
         <member name="T:AngleSharp.Dom.AdjacentPosition">
             <summary>
-            Enumeration with possible values for the adjacent position insertion.
+            Enumeration with possible values for the adjacent position insertation.
             </summary>
         </member>
         <member name="F:AngleSharp.Dom.AdjacentPosition.BeforeBegin">
@@ -4363,7 +4363,7 @@
         </member>
         <member name="F:AngleSharp.Dom.DocumentPositions.Contains">
             <summary>
-            The node contains the other element.
+            The node is contains the other element.
             </summary>
         </member>
         <member name="F:AngleSharp.Dom.DocumentPositions.ContainedBy">
@@ -4737,20 +4737,6 @@
             <param name="element">The element to check.</param>
             <returns>True if the element has been visited, otherwise false.</returns>
         </member>
-        <member name="M:AngleSharp.Dom.ElementExtensions.CheckActive(AngleSharp.Dom.IElement)">
-            <summary>
-            Checks if the given element is currently active.
-            </summary>
-            <param name="element">The element to inspect.</param>
-            <returns>True if the element is active, otherwise false.</returns>
-        </member>
-        <member name="M:AngleSharp.Dom.ElementExtensions.CheckVisited(AngleSharp.Dom.IElement)">
-            <summary>
-            Checks if the given element was visited previously.
-            </summary>
-            <param name="element">The element to inspect.</param>
-            <returns>True if the element was previously visited, otherwise false.</returns>
-        </member>
         <member name="M:AngleSharp.Dom.ElementExtensions.IsLink(AngleSharp.Dom.IElement)">
             <summary>
             Checks if the element is a link.
@@ -4799,20 +4785,6 @@
             </summary>
             <param name="element">The element to check.</param>
             <returns>True if the element is readonly, otherwise false.</returns>
-        </member>
-        <member name="M:AngleSharp.Dom.ElementExtensions.IsMutable(AngleSharp.Html.Dom.IHtmlInputElement)">
-            <summary>
-            Checks if the input can be changed.
-            </summary>
-            <param name="input">The input to check.</param>
-            <returns>True if the element is mutable, otherwise false.</returns>
-        </member>
-        <member name="M:AngleSharp.Dom.ElementExtensions.IsMutable(AngleSharp.Html.Dom.IHtmlTextAreaElement)">
-            <summary>
-            Checks if the textarea can be changed.
-            </summary>
-            <param name="textArea">The area to check.</param>
-            <returns>True if the element is mutable, otherwise false.</returns>
         </member>
         <member name="M:AngleSharp.Dom.ElementExtensions.IsEditable(AngleSharp.Dom.IElement)">
             <summary>
@@ -8527,7 +8499,7 @@
         </member>
         <member name="M:AngleSharp.Dom.CollectionExtensions.Accepts(AngleSharp.Dom.FilterSettings,AngleSharp.Dom.INode)">
             <summary>
-            Determines if the current filter settings include the provided
+            Determines if the current filter settings includes the provided
             node.
             </summary>
             <param name="filter">The filter settings to use.</param>
@@ -9620,7 +9592,7 @@
             <inheritdoc />
         </member>
         <member name="M:AngleSharp.Dom.Node.Equals(AngleSharp.Dom.INode)">
-            <inheritdoc cref="M:System.IEquatable`1.Equals(`0)" />
+            <inheritdoc />
         </member>
         <member name="M:AngleSharp.Dom.Node.GetPrefixAndLocalName(System.String,System.String@,System.String@,System.String@)">
             <summary>
@@ -9695,7 +9667,7 @@
             The element may start with an additional free line.
             </summary>
         </member>
-        <member name="F:AngleSharp.Dom.NodeFlags.ImplicitlyClosed">
+        <member name="F:AngleSharp.Dom.NodeFlags.ImplicitelyClosed">
             <summary>
             The element is implicitely closed.
             </summary>
@@ -17393,6 +17365,16 @@
             Creates a new HTML menuitem element.
             </summary>
         </member>
+        <member name="P:AngleSharp.Html.Dom.HtmlMenuItemElement.IsVisited">
+            <summary>
+            Gets or sets if the link has been visited.
+            </summary>
+        </member>
+        <member name="P:AngleSharp.Html.Dom.HtmlMenuItemElement.IsActive">
+            <summary>
+            Gets or sets if the link is currently active.
+            </summary>
+        </member>
         <member name="P:AngleSharp.Html.Dom.HtmlMenuItemElement.Command">
             <summary>
             Gets the assigned master command, if any.
@@ -18376,12 +18358,11 @@
             Gets the chosen boundary.
             </summary>
         </member>
-        <member name="M:AngleSharp.Html.FormDataSet.AsMultipart(AngleSharp.Html.Forms.Submitters.IHtmlEncoder,System.Text.Encoding)">
+        <member name="M:AngleSharp.Html.FormDataSet.AsMultipart(System.Text.Encoding)">
             <summary>
             Applies the multipart/form-data algorithm.
             http://www.w3.org/html/wg/drafts/html/master/forms.html#multipart/form-data-encoding-algorithm
             </summary>
-            <param name="htmlEncoder">HTML encoder.</param>
             <param name="encoding">(Optional) Explicit encoding.</param>
             <returns>A stream containing the body.</returns>
         </member>
@@ -18535,34 +18516,6 @@
             Serializes the visited form data set to the stream.
             </summary>
             <param name="stream">The stream writer to use.</param>
-        </member>
-        <member name="T:AngleSharp.Html.Forms.Submitters.DefaultHtmlEncoder">
-            <summary>
-            Represents the default HTML encoder.
-            </summary>
-        </member>
-        <member name="M:AngleSharp.Html.Forms.Submitters.DefaultHtmlEncoder.Encode(System.String,System.Text.Encoding)">
-            <summary>
-            Replaces characters in names and values that cannot be expressed by using the given
-            encoding with &amp;#...; base-10 unicode point.
-            </summary>
-            <param name="value">The value to sanitize.</param>
-            <param name="encoding">The encoding to consider.</param>
-            <returns>The sanitized value.</returns>
-        </member>
-        <member name="T:AngleSharp.Html.Forms.Submitters.IHtmlEncoder">
-            <summary>
-            Represents the HTML encoder.
-            </summary>
-        </member>
-        <member name="M:AngleSharp.Html.Forms.Submitters.IHtmlEncoder.Encode(System.String,System.Text.Encoding)">
-            <summary>
-            Replaces characters in names and values that cannot be expressed by using the given
-            encoding with &amp;#...; base-10 unicode point.
-            </summary>
-            <param name="value">The value to sanatize.</param>
-            <param name="encoding">The encoding to consider.</param>
-            <returns>The sanatized value.</returns>
         </member>
         <member name="T:AngleSharp.Html.Forms.TextDataSetEntry">
             <summary>
@@ -18869,7 +18822,7 @@
         </member>
         <member name="T:AngleSharp.Html.InputTypes.BaseInputType">
             <summary>
-            Base type for the all input field types. Primarily from:
+            Base type for the all input field types. Primarely from:
             http://www.w3.org/TR/html5/forms.html#range-state-(type=range)
             </summary>
         </member>
@@ -19142,6 +19095,7 @@
             <summary>
             Starts loading the associated resource(s) asynchronously.
             </summary>
+            <returns></returns>
         </member>
         <member name="M:AngleSharp.Html.LinkRels.ImportLinkRelation.LoadAsync">
             <summary>
@@ -19431,11 +19385,6 @@
             Closes the template element.
             </summary>
         </member>
-        <member name="M:AngleSharp.Html.Parser.HtmlDomBuilder.CloseTemplateMode">
-            <summary>
-            Finished the template mode.
-            </summary>
-        </member>
         <member name="M:AngleSharp.Html.Parser.HtmlDomBuilder.InTableBodyCloseTable(AngleSharp.Html.Parser.Tokens.HtmlTagToken)">
             <summary>
             Closes the table if the section is in table scope.
@@ -19647,11 +19596,6 @@
             <param name="tagName">The tag name to check.</param>
             <returns>True if it is in scope, otherwise false.</returns>
         </member>
-        <member name="M:AngleSharp.Html.Parser.HtmlDomBuilder.IsCustomElementEverywhere(System.String)">
-            <summary>
-            Checks if the given tag name should be considered as a "custom element everywhere".
-            </summary>
-        </member>
         <member name="M:AngleSharp.Html.Parser.HtmlDomBuilder.HandleScript(AngleSharp.Html.Dom.HtmlScriptElement)">
             <summary>
             Runs a script given by the current node.
@@ -19717,12 +19661,6 @@
             </summary>
             <param name="tag">The associated tag token.</param>
             <param name="acknowledgeSelfClosing">Should the self-closing be acknowledged?</param>
-        </member>
-        <member name="M:AngleSharp.Html.Parser.HtmlDomBuilder.AddTemplateElement(AngleSharp.Html.Parser.Tokens.HtmlTagToken)">
-            <summary>
-            Appends a template element.
-            </summary>
-            <param name="tag">The associated tag token.</param>
         </member>
         <member name="M:AngleSharp.Html.Parser.HtmlDomBuilder.AddElement(AngleSharp.Dom.Element,AngleSharp.Html.Parser.Tokens.HtmlTagToken,System.Boolean)">
             <summary>
@@ -20309,7 +20247,7 @@
         </member>
         <member name="F:AngleSharp.Html.Parser.HtmlParseMode.Plaintext">
             <summary>
-            Optional state: Just plain text data (characters will be parsed matching the given ones).
+            Optional state: Just plain text data (chracters will be parsed matching the given ones).
             </summary>
         </member>
         <member name="F:AngleSharp.Html.Parser.HtmlParseMode.Rawtext">
@@ -20461,20 +20399,6 @@
             Gets or sets if the document is embedded.
             </summary>
         </member>
-        <member name="P:AngleSharp.Html.Parser.HtmlParserOptions.IsAcceptingCustomElementsEverywhere">
-            <summary>
-            Gets or sets if custom elements can be used everywhere. Otherwise,
-            custom elements can only be used in locations specified by the
-            official W3C spec (e.g., in the body).
-            </summary>
-        </member>
-        <member name="P:AngleSharp.Html.Parser.HtmlParserOptions.IsPreservingAttributeNames">
-            <summary>
-            Gets or sets if attribute names should not be normalized.
-            Usually, attribute names will be only seen lower-cased. When this
-            option is activated, the names will be taken as-is.
-            </summary>
-        </member>
         <member name="P:AngleSharp.Html.Parser.HtmlParserOptions.IsNotSupportingFrames">
             <summary>
             Gets or sets if frames should not be supported. Once
@@ -20539,11 +20463,6 @@
         <member name="P:AngleSharp.Html.Parser.HtmlTokenizer.IsAcceptingCharacterData">
             <summary>
             Gets or sets if CDATA sections are accepted.
-            </summary>
-        </member>
-        <member name="P:AngleSharp.Html.Parser.HtmlTokenizer.IsPreservingAttributeNames">
-            <summary>
-            Gets or sets if attribute names should be taken as is.
             </summary>
         </member>
         <member name="P:AngleSharp.Html.Parser.HtmlTokenizer.IsNotConsumingCharacterReferences">
@@ -21253,7 +21172,7 @@
         </member>
         <member name="M:AngleSharp.Html.Parser.Tokens.HtmlToken.RemoveNewLine">
             <summary>
-            Removes the new line in the beginning, if any.
+            Removes the a new line in the beginning, if any.
             </summary>
         </member>
         <member name="M:AngleSharp.Html.Parser.Tokens.HtmlToken.AsTag">
@@ -21508,7 +21427,7 @@
             <summary>
             Formats the given text.
             </summary>
-            <param name="text">The text to sanitize.</param>
+            <param name="text">The text to sanatize.</param>
             <returns>The formatted text.</returns>
         </member>
         <member name="M:AngleSharp.IMarkupFormatter.LiteralText(AngleSharp.Dom.ICharacterData)">
@@ -24528,14 +24447,6 @@
             <param name="c">The character to examine.</param>
             <returns>The result of the test.</returns>
         </member>
-        <member name="M:AngleSharp.Text.CharExtensions.IsCustomElementName(System.Char)">
-            <summary>
-            Gets if the character is actually a character that can be used for building a custom element name.
-            See https://html.spec.whatwg.org/#valid-custom-element-name
-            </summary>
-            <param name="c">The character to examine.</param>
-            <returns>The result of the test.</returns>
-        </member>
         <member name="M:AngleSharp.Text.CharExtensions.IsNameStart(System.Char)">
             <summary>
             Determines if the given character is a valid character for starting
@@ -24754,13 +24665,6 @@
             <param name="element">The element to search for.</param>
             <param name="comparison">The default comparison to use.</param>
             <returns>The status of the check.</returns>
-        </member>
-        <member name="M:AngleSharp.Text.StringExtensions.IsCustomElement(System.String)">
-            <summary>
-            Checks if the given string satisfies the rules for a custom element name.
-            </summary>
-            <param name="tag">The current tag name.</param>
-            <returns>True if the string matches a custom element name.</returns>
         </member>
         <member name="M:AngleSharp.Text.StringExtensions.Is(System.String,System.String)">
             <summary>
@@ -25810,25 +25714,6 @@
         <member name="F:AngleSharp.Xhtml.XhtmlMarkupFormatter.Instance">
             <summary>
             An instance of the XhtmlMarkupFormatter.
-            </summary>
-        </member>
-        <member name="M:AngleSharp.Xhtml.XhtmlMarkupFormatter.#ctor">
-            <summary>
-            Default constructor for <see cref="T:AngleSharp.Xhtml.XhtmlMarkupFormatter"/>
-            </summary>
-        </member>
-        <member name="M:AngleSharp.Xhtml.XhtmlMarkupFormatter.#ctor(System.Boolean)">
-            <summary>
-            Constructor for <see cref="T:AngleSharp.Xhtml.XhtmlMarkupFormatter"/>
-            </summary>
-            <param name="emptyTagsToSelfClosing">
-            Specify if empty elements like &lt;div&gt;&lt;/div&gt;
-            should be converted to self-closing ones like &lt;div /&gt;
-            </param>
-        </member>
-        <member name="P:AngleSharp.Xhtml.XhtmlMarkupFormatter.IsSelfClosingEmptyTags">
-            <summary>
-            Gets the status if empty tags will be self-closed or not.
             </summary>
         </member>
         <member name="M:AngleSharp.Xhtml.XhtmlMarkupFormatter.CloseTag(AngleSharp.Dom.IElement,System.Boolean)">

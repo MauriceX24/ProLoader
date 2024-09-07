@@ -67,7 +67,7 @@ FYTAGB
   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="F:ProLoad.Form1.dStatus">
+<member name="M:ProLoad.Form1.dscLogin(System.String)">
  <summary>
  Login in Discord
  </summary>
