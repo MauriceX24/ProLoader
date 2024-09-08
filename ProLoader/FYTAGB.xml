@@ -22,6 +22,14 @@ FYTAGB
   Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
 </summary>
 </member>
+<member name="P:ProLoad.My.Resources.Resources.changelog">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die []==============[ CHANGELOG ]==============[]
+	-&gt; Updater was updated
+	-&gt; libvideo.dll was updated
+	-&gt; Some bugs and other improvements  ähnelt.
+</summary>
+</member>
 <member name="P:ProLoad.My.Resources.Resources.fytagb">
 <summary>
   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
@@ -67,11 +75,12 @@ FYTAGB
   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="M:ProLoad.Form1.dscLogin(System.String)">
+<member name="F:ProLoad.Form1.dStatus">
  <summary>
  Login in Discord
  </summary>
  <param name="value">Lol this is really cool</param>
+ 
 </member>
 </members>
 </doc>
